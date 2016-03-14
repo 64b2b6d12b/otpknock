@@ -16,9 +16,9 @@ The script assumes you have already generated a hex secret as a file called `sec
 
 On the client side, simply run `chmod +x otpknock-client.sh` and `./otpknock-client.sh` after modifying the IP/FQDN in the script.
 
-## Demo:
+## asciicast demo:
 
-[![asciicast](https://asciinema.org/a/djq8fp6v5ndmiat0pxrq044nb.png)](https://asciinema.org/a/djq8fp6v5ndmiat0pxrq044nb)
+[![asciicast](https://asciinema.org/a/39361.png)](https://asciinema.org/a/39361)
 
 ## Credit:
 
