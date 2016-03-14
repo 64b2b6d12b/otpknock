@@ -16,6 +16,10 @@ The script assumes you have already generated a hex secret as a file called `sec
 
 On the client side, simply run `chmod +x otpknock-client.sh` and `./otpknock-client.sh` after modifying the IP/FQDN in the script.
 
+## Demo:
+
+[![asciicast](https://asciinema.org/a/djq8fp6v5ndmiat0pxrq044nb.png)](https://asciinema.org/a/djq8fp6v5ndmiat0pxrq044nb)
+
 ## Credit:
 
 Thanks to the [/r/bash community](https://www.reddit.com/r/bash/comments/4a6jsb/port_knocking_otp_idea/) to help bring this script to life :)
