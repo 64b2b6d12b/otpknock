@@ -1,10 +1,12 @@
 
 #!/bin/bash
 
+# Replace 198.51.100.50 with IP or FQDN of actual server
+ip="198.51.100.50"
 key=$(cat secret)
 otp=$(oathtool --totp -s 60 $key)
-sequence=$(sed 's/\(.\)/\100 /g' <<< $otp)
+sequence=$(sed 's/./&00 /g; s/ $//' <<< $otp)
 
-# Replace 198.51.100.50 with IP or FQDN of actual server
-
-knock 198.51.100.50 $sequence
+for port in $sequence; do
+    knock "$ip" "$port"
+done
