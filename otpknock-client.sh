@@ -3,7 +3,7 @@
 
 # Replace 198.51.100.50 with IP or FQDN of actual server
 ip="198.51.100.50"
-key=$(cat secret)
+key=$(openssl enc -aes-256-cbc -d -a -in secret-tst.enc)
 otp=$(oathtool --totp -s 60 $key)
 sequence=$(sed 's/./&00 /g; s/ $//' <<< $otp)
 
